@@ -1,0 +1,21 @@
+{
+  "name": "ngxsmk-skeleton-loader",
+  "version": "1.0.0",
+  "description": "Angular 17+ standalone skeleton loader (component + directive, SCSS, shimmer/pulse/wave)",
+  "license": "MIT",
+  "keywords": ["angular", "skeleton", "loader", "shimmer", "ngxsmk", "component"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toozuuu/ngxsmk-skeleton-loader"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "@angular/common": ">=17 <20",
+    "@angular/core": ">=17 <20"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/public-api.ts"
+    }
+  }
+}

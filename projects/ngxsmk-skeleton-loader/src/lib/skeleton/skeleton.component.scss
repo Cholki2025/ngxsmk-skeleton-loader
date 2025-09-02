@@ -1,0 +1,69 @@
+:host.ngxsmk-skeleton {
+  width: var(--w, 100%);
+  height: var(--h, 1rem);
+  border-radius: var(--r, 0.5rem);
+  background: var(--ngx-skel-base, #e5e7eb); // slate-200
+  position: relative;
+  overflow: hidden;
+}
+
+
+// text preset — thinner bar by default
+:host(.is-text) {
+  height: var(--h, 0.9rem);
+  border-radius: var(--r, 0.375rem);
+}
+
+
+// circle preset — perfect circle
+:host(.is-circle) {
+  width: var(--w, 3rem);
+  height: var(--h, 3rem);
+  border-radius: var(--r, 9999px);
+}
+
+
+// button/image/rect presets
+:host(.is-rect) {
+  height: var(--h, 2.5rem);
+}
+
+
+// Animations
+// Shimmer: moving gradient highlight
+:host(.anim-shimmer)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg, transparent, var(--ngx-skel-highlight, rgba(255,255,255,0.6)), transparent);
+  animation: ngxskel-shimmer 1.25s infinite;
+}
+
+
+@keyframes ngxskel-shimmer {
+  100% { transform: translateX(100%); }
+}
+
+
+// Pulse: fade in/out
+:host(.anim-pulse) { animation: ngxskel-pulse 1.2s ease-in-out infinite; }
+@keyframes ngxskel-pulse {
+  0%,100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+
+// Wave: diagonal moving mask
+:host(.anim-wave)::after {
+  content: "";
+  position: absolute;
+  inset: -50% -50%;
+  background: repeating-linear-gradient(135deg,
+    var(--ngx-skel-base, #e5e7eb) 0 12px,
+    var(--ngx-skel-highlight, #f1f5f9) 12px 24px
+  );
+  animation: ngxskel-wave 1.1s linear infinite;
+  opacity: 0.5;
+}
+@keyframes ngxskel-wave { 100% { transform: translateX(25%); } }

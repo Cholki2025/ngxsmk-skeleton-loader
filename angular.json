@@ -3,5 +3,120 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngxsmk-skeleton-loader": {
+      "projectType": "library",
+      "root": "projects/ngxsmk-skeleton-loader",
+      "sourceRoot": "projects/ngxsmk-skeleton-loader/src",
+      "prefix": "ngxsmk",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngxsmk-skeleton-loader/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngxsmk-skeleton-loader/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/ngxsmk-skeleton-loader/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ngxsmk-skeleton-demo": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/ngxsmk-skeleton-demo",
+      "sourceRoot": "projects/ngxsmk-skeleton-demo/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/ngxsmk-skeleton-demo/src/main.ts",
+            "tsConfig": "projects/ngxsmk-skeleton-demo/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/ngxsmk-skeleton-demo/public"
+              }
+            ],
+            "styles": [
+              "projects/ngxsmk-skeleton-demo/src/styles.scss"
+            ],
+            "server": "projects/ngxsmk-skeleton-demo/src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "projects/ngxsmk-skeleton-demo/src/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "ngxsmk-skeleton-demo:build:production"
+            },
+            "development": {
+              "buildTarget": "ngxsmk-skeleton-demo:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular/build:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/ngxsmk-skeleton-demo/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/ngxsmk-skeleton-demo/public"
+              }
+            ],
+            "styles": [
+              "projects/ngxsmk-skeleton-demo/src/styles.scss"
+            ]
+          }
+        }
+      }
+    }
   }
 }
