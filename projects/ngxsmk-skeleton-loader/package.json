@@ -1,6 +1,6 @@
 {
   "name": "ngxsmk-skeleton-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular 17+ standalone skeleton loader (component + directive, SCSS, shimmer/pulse/wave)",
   "license": "MIT",
   "keywords": ["angular", "skeleton", "loader", "shimmer", "ngxsmk", "component"],
